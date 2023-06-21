@@ -3,7 +3,11 @@ let  obj ={
     age: 25,
     addres:
     {
-        state:"hindupur"
+        state:"hindupur",
+        directions:
+        {
+            left:100
+        }
     }
 }
 
@@ -11,5 +15,5 @@ let  obj ={
 
 //let {addres:{state:mystate}}=obj;
 //console.log(mystate);
-let {addres:{state}}=obj;
-console.log(state);
+let {addres:{diections:{left}}}=obj;
+console.log(left);
