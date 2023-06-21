@@ -9,5 +9,7 @@ let  obj ={
 
 
 
-let {addres:{state:mystate}}=obj;
-console.log(mystate);
+//let {addres:{state:mystate}}=obj;
+//console.log(mystate);
+let {addres:{state}}=obj;
+console.log(state);
