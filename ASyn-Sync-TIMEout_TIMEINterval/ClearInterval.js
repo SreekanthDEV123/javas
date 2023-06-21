@@ -19,10 +19,17 @@ let x=setInterval(()=>
 
    ,100)
   // test3();
-   setTimeout(()=>
+  // setTimeout((str)=>
+   //{
+     /// console.log(str);
+      //test3();
+      //clearInterval(x);
+       
+   //},500,"radha");
+   setTimeout((str)=>
    {
-      // console.log("lol");
+      console.log(str);
       test3();
       clearInterval(x);
        
-   },500)
+   },500,"radha");
