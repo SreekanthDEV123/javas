@@ -1,12 +1,15 @@
 let  obj ={
     name:"sreekanth",
     age: 25,
-    addres:"hindupur"
-}
-for(ele in obj)
-{
-    if(ele=='addres')
+    addres:
     {
-    console.log(obj.ele);
+        state:"hindupur"
+    }
 }
-}
+
+
+//let {age:myage,name}=obj;
+//console.log(age);
+//console.log(name);
+let {addres:{state:mystate}}=obj;
+console.log(mystate);
