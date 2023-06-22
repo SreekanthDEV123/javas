@@ -1,13 +1,14 @@
 let  express = require("express");
 let app = express();
-let port = 2478;
+let port = 2472;
 app.get('/',(req,res)=>
 {
     res.send("hi get request");
 })
 app.get('/product',(req,res)=>
 {
-    res.send("hi get  products");
+    res.status(200).json({"message":"hi products message"})
+
 })
 app.get('/category',(req,res)=>
 {
